@@ -1,16 +1,22 @@
 package com.qa.AccountNumGenAPI;
 
-import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.test.context.junit4.SpringRunner;
 
-@RunWith(SpringRunner.class)
-@SpringBootTest
+import org.junit.runner.RunWith;
+import org.junit.runners.Suite;
+import org.junit.runners.Suite.SuiteClasses;
+
+
+import com.qa.AccountNumGenAPI.ControllerTest.ControllerSuiteTest;
+import com.qa.AccountNumGenAPI.ServiceTest.AccNumGenTest;
+import com.qa.AccountNumGenAPI.ServiceTest.ServiceSuiteTest;
+
+
+
+
+@RunWith(Suite.class) 
+@SuiteClasses({ServiceSuiteTest.class,ControllerSuiteTest.class,AccNumGenTest.class}) 
 public class AccountNumGenApiApplicationTests {
 
-	@Test
-	public void contextLoads() {
-	}
+
 
 }

@@ -7,7 +7,7 @@ import com.qa.AccountNumGenAPI.Service.AccNumGenService;
 
 @RestController
 public class AccNumGenController {
-
+	
 	private AccNumGenService svc;
 
 	public AccNumGenService getAccNumGenService() {
